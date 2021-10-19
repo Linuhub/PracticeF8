@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+
+*/
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Hình dáng
+
+*/
+html{
+    font-family: sans-serif;
+}
+#main {
+    overflow: hidden;
+}
+#header{
+    position: fixed;
+    width: 100vw;
+    height: 46px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.text-white {
+    color: #fff !important;
+}
+.clear {
+    clear: both;
+}
+#nav ,.subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav > li > a{
+    color: rgb(248, 246, 244);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 20px;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000!important;
+    background-color: rgba(173, 166, 166, 0.904)!important;
+}
+
+#nav > li:hover .subnav {
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav #menu-icon,
+#nav #icon {
+    text-align: center;
+    min-width: 62px;
+    float: right;
+    line-height: 46px;
+    color: rgb(248, 246, 244);
+    font-weight: bold;
+    padding: 0 20px;
+    right: 16px;
+}
+#nav #menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu-icon:hover {
+    color: black !important;
+    background-color: rgb(165, 172, 172);
+}
+#icon:hover {
+    cursor: pointer;
+    background-color: #f44336!important;
+}
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url('../img/slider/chicago.jpg')  top center/cover no-repeat;
+}
+#content .content-section {
+    width: 768px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .content-heading {
+    margin: 10px 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 3px;
+    line-height: 45px;
+}
+#content .content-slogan {
+    line-height: 22px;
+    margin: 15px 0;
+    text-align: center;
+    font-family: sans-serif;    
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(160, 157, 157);
+}
+#content .about-text {
+    width: 768px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#content .members-list {
+    overflow: hidden;
+}
+#content .members-item {
+    float: left;
+    padding: 32px 0;
+    width: 33.333333%;
+    text-align: center;
+}
+#content .members-item-name {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 22px;
+}
+#content .members-item-img {
+    height: 154px;
+    width: 154px;
+    border-radius: 4px;
+}
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+}
+#slider .text-heading {
+    margin: 10px;
+    padding: 5px;
+    text-shadow: 0 0 5px #000000;
+}
+#slider .text-discription {
+    margin: 15px;
+    text-shadow: 0 0 10px #000000;
+}
+.tour-section {
+    background-color: #000;
+}
+.ticket-list {
+    background-color: #fff;
+    list-style-type: none;
+}
+.ticket-list li {
+    padding: 8px 16px;
+    border-bottom: 0.01px solid rgba(192, 187, 187, 0.5);
+    line-height: 1.5;
+    font-size: 15px;
+    color: rgb(109, 106, 106);
+}
+.sold-out {
+    margin-left: 16px;
+    padding: 2px 8px;
+    color: rgba(255, 255, 255, 0.863);
+    background-color: #f44336;
+}
+.quantity {
+    float: right;
+    margin-right: 10px;
+    padding: 2px 8px;
+    border-radius: 25px;
+    color: blanchedalmond;
+    background-color: black;
+}
+.tour-places {
+    margin: 32px -8px 0 -8px;
+    padding-bottom: 32px;
+}
+.place-infor {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.place-ticket {
+    padding: 15px;
+    background-color: #fff;
+    font-size: 15px;
+}
+.place-name {
+    height: 22px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.place-date {
+    height: 22px;
+    margin: 15px 0;
+    color: rgb(147, 149, 149);
+}
+.place-description {
+    height: 22px;
+    margin: 15px 0;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.buy-tickets.text-white {
+    background-color: black;
+    text-decoration: none;
+    margin: 25px 0 0;
+    display: inline-block;
+    padding: 10px 16px;
+}
+.buy-tickets.text-white:hover {
+    background-color: rgba(195, 193, 193, 0.931);
+    color: black !important;
+}
+.view-img {
+    width: 100%;
+    display: block;
+}
+.view-img:hover {
+    opacity: 0.5;
+}
+.contact-wrap {
+    margin-top: 50px;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+    font-size: 18px;
+}
+.col-full {
+    width: 100%;
+}
+.contact-icon {
+    width: 40px;
+}
+.col.col-half > p {
+    padding: 5px;
+}
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+.row #message {
+    margin: 8px 0;
+}
+.form-send {
+    float: right;
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: 0;
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    line-height: 22px;
+}
+.form-send:hover {
+    background-color: rgba(195, 193, 193, 0.931);
+    color: black !important;
+}
+#footer {
+    margin-top: 96px;
+}
+.footer-map {
+    width: 100%;
+    margin-bottom: -4px;
+    filter: grayscale(50%);
+}
+.source {
+    margin: 64px 0;
+    height: 88px;
+    text-align: center;
+    opacity: 0.6;
+}
+.icon-source {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.icon-source i:hover {
+    opacity: 0.4;
+}
+.last-content {
+    font-size: 15px;
+    color: #000000;
+}
+.last-content a {
+    font-size: 15px;
+    color: #000000;
+}
+
+

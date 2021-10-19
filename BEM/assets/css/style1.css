@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+height: 100vh;
+display: flex;
+flex-direction: column;
+font-family: "Helvetica Neue";
+background-color: #f4f4f5;
+}
+
+body > div {
+    margin: auto;
+}
+
+/* Block */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* trick */
+/* Để cách 2 nút với nhau, ta css với điều kiện  */
+/* nút đó có nút đứng cạnh */ 
+.btn + .btn {
+    margin-left: 16px;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    pointer-events: none;
+}
