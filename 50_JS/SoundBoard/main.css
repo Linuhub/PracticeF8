@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(146, 103, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background-color: rebeccapurple;
+    padding: 24px 18px;
+    margin: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
