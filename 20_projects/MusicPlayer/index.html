@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/image/favicon.png"/>
+    <script src="https://kit.fontawesome.com/aa2b661d6a.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Music Player</div>
+        <div class="content">
+            <div class="music-box">
+                <div class="background"></div>
+                <div class="cd" style="background-image: url('./assets/image/dangerouswoman.jpg');"></div>
+                <audio id="audio" src=""></audio>
+                <div class="buttons">
+                    <button class="button prev"><i class="fas fa-backward"></i></button>
+                    <button class="button play"><i class="fas fa-play"></i></button>
+                    <button class="button pause"><i class="fas fa-pause"></i></button>
+                    <button class="button next"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="sub-box">
+                    <div class="namesong">Dangerous Wonman</div>
+                    <div class="progress-container" >
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
